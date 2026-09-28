@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Department of Computer Science</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Department of Computer Science</h1>
+        <h2>Student Enquiry & Contact Form</h2>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h3>Get in Touch</h3>
+            <p>Please complete the form below for any general enquiries, programme details or registration support.</p>
+
+            <form action="#" method="post">
+                
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <p>
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" id="fname" name="firstname" required>
+                    </p>
+                    
+                    <p>
+                        <label for="sname">Surname:</label><br>
+                        <input type="text" id="sname" name="surname" required>
+                    </p>
+                    
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    
+                    <p>
+                        <label for="student_num">Student Number:</label><br>
+                        <input type="text" id="student_num" name="student_number">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- Enquiry Details -->
+                <fieldset>
+                    <legend>Enquiry Details</legend>
+
+                    <p>
+                        <label for="enquiry_type">Enquiry Type:</label><br>
+                        <select id="enquiry_type" name="enquiry_type" required>
+                            <option value="">-- Select Option --</option>
+                            <option value="general">General Enquiry</option>
+                            <option value="programme">Programme Information</option>
+                            <option value="registration">Registration</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="6" cols="40" placeholder="Type your inquiry here..." required></textarea>
+                    </p>
+
+                    <p>
+                        <label>Preferred Contact Method:</label><br>
+                        <input type="radio" id="pref_email" name="contact_method" value="email" checked>
+                        <label for="pref_email">Email</label><br>
+
+                        <input type="radio" id="pref_phone" name="contact_method" value="phone">
+                        <label for="pref_phone">Phone</label><br>
+
+                        <input type="radio" id="pref_sms" name="contact_method" value="sms">
+                        <label for="pref_sms">SMS</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- Buttons -->
+                <div>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Department of Computer Science. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
